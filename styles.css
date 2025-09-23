@@ -9,12 +9,12 @@ body {
     background-color: #000;
     color: #eee;
     font-size: 12px;
+    overflow: hidden;
 }
 
 .todo-conteudo {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
 }
 
 .todo-conteudo .lista .lista-item {
@@ -26,12 +26,13 @@ body {
 .todo-conteudo .lista .lista-item img {
     object-fit: cover;
     width: 100%;
+    height: 100%;
     filter: brightness(50%);
 }
 
 .todo-conteudo .lista .lista-item .conteudo {
     position: absolute;
-    top: 40%;
+    top: 20%;
     right: 10%;
     padding-right: 30%;
     width: 80%;
@@ -67,7 +68,7 @@ body {
 .todo-conteudo .thumb {
     position: absolute;
     left: 50%;
-    top: 500px;
+    top: 350px;
     display: flex;
     gap: 20px;
 }
@@ -84,4 +85,10 @@ body {
     object-fit: cover;
     border-radius: 10px;
     filter: brightness(80%);
+}
+
+.todo-conteudo .thumb .conteudo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
