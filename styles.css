@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #eee;
+    font-size: 12px;
+}
+
+.todo-conteudo {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.todo-conteudo .lista .lista-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.todo-conteudo .lista .lista-item img {
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.todo-conteudo .lista .lista-item .conteudo {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+    padding-right: 30%;
+    width: 80%;
+    color: #eee;
+    box-shadow: 0 5px 10px #0004;
+}
+
+.todo-conteudo .lista .lista-item .titulo {
+    font-size: 5em;
+    font-weight: 700;
+    line-height: 1.3em;
+}
+
+.todo-conteudo .lista .lista-item .descricao {
+    font-size: 1..5em;
+}
+
+.todo-conteudo .lista .lista-item .butoes button {
+    padding: 10px 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.todo-conteudo .lista .lista-item .butoes button:hover {
+    background: transparent;
+    border: none;
+    border: solid 1px #eee;
+    color: #eee;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.todo-conteudo .thumb {
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    display: flex;
+    gap: 20px;
+}
+
+.todo-conteudo .thumb .thumb-item {
+    width: 135px;
+    height: 200px;
+    position: relative;
+}
+
+.todo-conteudo .thumb .thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter: brightness(80%);
+}
